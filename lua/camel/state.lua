@@ -4,7 +4,7 @@ local buf
 local win
 
 local x = 0
-local y = 5
+local y = 1
 
 local dx = 1
 
@@ -24,16 +24,25 @@ M.create_window = function(art)
 		width = 19,
 		height = #art,
 		style = "minimal", -- removes bonus junk (e.g. line no, status col, signs, etc.)
-		zindex = 1,
 	})
+	-- make transparency hl group
+	vim.api.nvim_set_hl(0, "CamelTransparent", {bg = "NONE", ctermbg = "NONE"})
+	-- remap normal to CamelTransparent
+	vim.api.nvim_set_option_value("winhl", "Normal:CamelTransparent", {win = win})
+	-- make buf transparent
 	vim.api.nvim_set_option_value(
-		"winhl",
-		"Normal:Normal",
+		"winblend",
+		100,
 		{ win = win }
 	)
 end
 
 M.start_animation = function()
+end
+
+M.hide = function()
+	buf = nil
+	win = nil
 end
 
 return M

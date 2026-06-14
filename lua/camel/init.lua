@@ -11,4 +11,8 @@ end
 function M.setup(opts)
 end
 
+function M.hide()
+	state.hide()
+end
+
 return M
