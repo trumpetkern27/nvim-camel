@@ -1,7 +1,6 @@
 local M = {}
 
-
-
+-- base camel
 M.camel = {
 	[[                 ''__  ]],
 	[[      ..   ..   / o._) ]],
@@ -15,6 +14,7 @@ M.camel = {
 	[[    `-`    `-`         ]]
 }
 
+-- start to walk from rest
 M.frames_start_from_walk = {
 	{
 		[[                 ''__  ]],
@@ -102,6 +102,7 @@ M.frames_start_from_walk = {
 	},
 }
 
+-- animation loop frames
 M.frames = {
 	{
 		[[                 ''__  ]],
@@ -310,7 +311,7 @@ M.frames = {
 	},
 }
 
-
+-- frames to go back to OG state
 M.frames_end = {
 	{
 		[[                 ''__  ]],

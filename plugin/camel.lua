@@ -1,3 +1,4 @@
+-- commands
 vim.api.nvim_create_user_command('CamelShow', function()
 	require('camel').show()
 end, {})

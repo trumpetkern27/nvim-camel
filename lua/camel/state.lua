@@ -120,7 +120,6 @@ end
 M.stop_animation = function()
 	if timer then
 		stop_timer()
-		
 		local end_idx = 1
 		local stopping = true
 		-- reset timer for stop
@@ -135,7 +134,9 @@ M.stop_animation = function()
 
 			-- finish walking cycle
 			if stopping then
-				if current_frame ~= 1 then
+				-- the current_frame first is the next to be drawn
+				-- so if current_frame == 2 then 1 was the last drawn
+				if current_frame ~= 2 then
 					vim.api.nvim_buf_set_lines(buf, 0, -1, false, frames[current_frame])
 					current_frame = (current_frame % #frames) + 1
 					color_window()

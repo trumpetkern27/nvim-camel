@@ -1,3 +1,4 @@
+-- default config values
 local config = {
 	color = "#C19A6B",
 	right = vim.o.columns - 25,
