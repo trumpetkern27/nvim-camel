@@ -2,7 +2,8 @@
 
 Puts an ASCII camel on your screen.
 
-~[demo](https://github.com/user-attachments/assets/173c3e09-b31f-4bc6-a293-d6b81b99b916)
+<img width="800" height="423" alt="camel" src="https://github.com/user-attachments/assets/b82c950f-65a3-4b80-880b-c4c2273009d3" />
+
 
 ## Installation
 
