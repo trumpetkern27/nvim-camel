@@ -1,7 +1,7 @@
 -- default config values
 local config = {
 	color = "#C19A6B",
-	right = vim.o.columns - 25,
+	right = 0,
 	top = 5,
 	ticks = 150,
 }
