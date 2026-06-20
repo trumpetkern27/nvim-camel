@@ -2,9 +2,7 @@
 
 Puts an ASCII camel on your screen.
 
-<video autoplay loop muted playsinline>
-	<source src="https://github.com/user-attachments/assets/ca546155-0ffb-4d0e-92bf-6019a33415cd" type="video/mp4">
-</video>
+~[demo](https://github.com/user-attachments/assets/173c3e09-b31f-4bc6-a293-d6b81b99b916)
 
 ## Installation
 
