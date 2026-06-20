@@ -54,7 +54,7 @@ end
 -- initialize colours
 M.init = function(opts)
 	color = opts.color
-	right = opts.right
+	right = vim.o.columns - opts.right
 	top = opts.top
 	ticks = opts.ticks
 end
